@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <title>create post</title>
+</head>
+<body>
+    <h1>create post</h1>
+    <form method="POST" action="/create-post">
+        <label for="post-title">Post Title:</label>
+        <textarea id="post-title" name="postTitle" rows="1" cols="50"></textarea>
+        <label for="post-content">Post Content:</label>
+        <textarea id="post-content" name="postContent" rows="4" cols="50"></textarea>
+        <br>
+        <!-- add post categories -->
+        <div class="categories">
+            <input type="radio" id="lifestyle" name="postCategories" value="lifestyle">
+            <label for="checkbox1">Lifestyle</label><br>
+          
+            <input type="radio" id="news" name="postCategories" value="news">
+            <label for="checkbox2">News</label><br>
+          
+            <input type="radio" id="gaming" name="postCategories" value="gaming">
+            <label for="checkbox3">Gaming</label><br>
+
+            <input type="radio" id="fashion" name="postCategories" value="fashion">
+            <label for="checkbox4">Fashion</label><br>
+
+            <input type="radio" id="music" name="postCategories" value="music">
+            <label for="checkbox5">Music</label><br>
+
+            <input type="radio" id="tv-movies" name="postCategories" value="tv-movies">
+            <label for="checkbox6">TV/Movies</label><br>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</body>
